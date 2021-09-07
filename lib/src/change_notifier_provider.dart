@@ -7,7 +7,7 @@ import 'proxy_provider.dart';
 /// Listens to a [ChangeNotifier], expose it to its descendants and rebuilds
 /// dependents whenever [ChangeNotifier.notifyListeners] is called.
 ///
-/// Depending on wether you want to **create** or **reuse** a [ChangeNotifier],
+/// Depending on whether you want to **create** or **reuse** a [ChangeNotifier],
 /// you will want to use different constructors.
 ///
 /// ## Creating a [ChangeNotifier]:
@@ -98,7 +98,7 @@ import 'proxy_provider.dart';
 class ChangeNotifierProvider<T extends ChangeNotifier?>
     extends ListenableProvider<T> {
   /// Creates a [ChangeNotifier] using `create` and automatically
-  /// dispose it when [ChangeNotifierProvider] is removed from the widget tree.
+  /// disposes it when [ChangeNotifierProvider] is removed from the widget tree.
   ///
   /// `create` must not be `null`.
   ChangeNotifierProvider({
